@@ -4,27 +4,12 @@
   "description": "A project to demonstrate web development skills for the Email Developer position.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "nodemailer": "^6.9.8"
+    "express": "^4.18.2"
   },
   "engines": {
     "node": "18.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/London3338/email-developer-project.git"
-  },
-  "author": "Your Name",
-  "license": "ISC",
-  "keywords": [
-    "email",
-    "developer",
-    "web",
-    "nodejs",
-    "express"
-  ]
+  }
 }
