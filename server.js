@@ -19,12 +19,14 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html')); // Serve the main HTML file
 });
 
-// Configure nodemailer for sending emails
+// Configure nodemailer for sending emails via Rambler
 const transporter = nodemailer.createTransport({
-    service: 'gmail', // Use Gmail as the email service
+    host: 'smtp.rambler.ru', // SMTP server for Rambler
+    port: 465, // Port for SSL
+    secure: true, // Use SSL
     auth: {
-        user: process.env.EMAIL_USER, // Email address (from environment variables)
-        pass: process.env.EMAIL_PASS // Email password (from environment variables)
+        user: process.env.EMAIL_USER || 'vovchok-vodol@rambler.ru', // Email address
+        pass: process.env.EMAIL_PASS || 'your-rambler-password' // Email password
     }
 });
 
@@ -34,7 +36,7 @@ app.post('/send-email', (req, res) => {
 
     // Configure the email options
     const mailOptions = {
-        from: process.env.EMAIL_USER, // Sender email address
+        from: process.env.EMAIL_USER || 'vovchok-vodol@rambler.ru', // Sender email address
         to: 'vovchok-vodol@rambler.ru', // Recipient email address
         subject: 'New Form Submission', // Email subject
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}` // Email body
