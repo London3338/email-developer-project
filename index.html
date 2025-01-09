@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Developer Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>Email Developer Project</h1>
+            <p>
+                This project is created to demonstrate the web development skills of a candidate applying for the Email Developer position. 
+                You can send a message to the candidate using the form below or email directly to <a href="mailto:333v888@gmail.com">333v888@gmail.com</a>.
+            </p>
+            <form id="dataForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message to the candidate" required></textarea>
+                
+                <button type="submit">Send</button>
+                <div id="notification" class="notification"></div> <!-- Notification area -->
+            </form>
+        </div>
+
+        <div class="table-section">
+            <h2>Submitted Data</h2>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="github-link">
+        <a href="https://github.com/your-username/your-repo" target="_blank">View on GitHub</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

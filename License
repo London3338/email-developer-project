@@ -1,0 +1,20 @@
+
+---
+
+### Key Points:
+1. **Professional Comments**: The code is well-commented to explain each step, making it easy for other developers to understand.
+2. **English Messages**: All notifications and comments are in English, as required by the employer.
+3. **README.md**: The `README` file provides a clear overview of the project, setup instructions, and technologies used.
+
+---
+
+### Deployment to GitHub
+1. Create a new repository on GitHub.
+2. Push your code to the repository:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/your-username/email-developer-project.git
+   git push -u origin main
