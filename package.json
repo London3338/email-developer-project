@@ -1,7 +1,7 @@
 {
   "name": "email-developer-project",
   "version": "1.0.0",
-  "description": "A project to demonstrate web development skills for the Email Developer position.", // Project description
+  "description": "A project to demonstrate web development skills for the Email Developer position.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
